@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+
+            android:layout_marginRight="5dp"
+
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_rounded"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_rounded"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="DANE WYMAGANE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Podaj wzrost(cm)"
+                        android:textSize="20dp"></TextView>
+
+                    <EditText
+                        android:id="@+id/profile_height"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="WZROST"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/colorInputText"
+                        android:textCursorDrawable="@color/colorInputText" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Podaj współczynnik aktywności"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/profile_bmr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/bmr_array" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Podaj płeć"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/profile_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/gender_array" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Podaj wagę(kg)"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/profile_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="WAGA"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/colorInputText"
+                        android:textCursorDrawable="@color/colorInputText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Podaj wiek(lata)"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/profile_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="WIEK"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/colorInputText"
+                        android:textCursorDrawable="@color/colorInputText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Podaj przyjmowane kalorie"
+                        android:textSize="20dp">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/profile_calories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="KALORIE"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/colorInputText"
+                        android:textCursorDrawable="@color/colorInputText" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:backgroundTint="@android:color/black"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="2dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/button_rounded"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="OPCJONALNE"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Podaj masę mięśniową(kg)"
+                        android:textSize="20dp" />
+
+
+                    <EditText
+                        android:id="@+id/profile_musclemass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:fontFamily="sans-serif-black"
+                        android:hint="MASA"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/colorInputText"
+                        android:textCursorDrawable="@color/colorInputText" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_profile_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Zaktualizuj dane"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+

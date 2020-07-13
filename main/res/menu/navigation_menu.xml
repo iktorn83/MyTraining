@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_first_fragment"
+        android:icon="@drawable/ic_apps_black_24dp"
+        android:title="Ekran Główny" />
+    <item
+        android:id="@+id/nav_second_fragment"
+        android:icon="@drawable/ic_portrait_black_24dp"
+        android:title="Profil fizyczny" />
+    <item
+        android:id="@+id/nav_third_fragment"
+        android:icon="@drawable/ic_settings_applications_black_24dp"
+        android:title="Kalkulatory" />
+    <item
+        android:id="@+id/nav_fourth_fragment"
+        android:icon="@drawable/ic_mode_edit_black_24dp"
+        android:title="Profil użytkownika" />
+    <item
+        android:id="@+id/nav_fifth_fragment"
+        android:icon="@drawable/ic_multiline_chart_black_24dp"
+        android:title="Analiza danych" />
+    <item
+        android:id="@+id/nav_sixth_fragment"
+        android:icon="@drawable/ic_fitness_center_black_24dp"
+        android:title="Aktywności" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_remove_circle_outline_24dp"
+        android:title="Wyloguj" />
+
+</menu>

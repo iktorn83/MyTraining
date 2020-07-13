@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MyTraining</string>
+    <string name="Open">Otwórz</string>
+    <string name="Close">Zamknij</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string-array name="gender_array">
+        <item>Mężczyzna</item>
+        <item>Kobieta</item>
+    </string-array>
+
+    <string-array name="activity_array">
+        <item>aerobik</item>
+        <item>jazda na nartach</item>
+        <item>pływanie</item>
+        <item>bieganie</item>
+        <item>badminton</item>
+        <item>balet</item>
+        <item>gra zespołowa w piłkę</item>
+        <item>jazda na rowerze</item>
+        <item>gimnastyka</item>
+        <item>joga</item>
+    </string-array>
+
+    <string-array name="devices_array">
+        <item>generator danych</item>
+
+    </string-array>
+    <string-array name="bmr_array">
+        <item>1.2 - brak aktywności, praca siedząca</item>
+        <item>1.3 - jeden trening w tygodniu i praca siedząca</item>
+        <item>1.4 - dwa treningi w tygodniu i praca siedząca</item>
+        <item>1.5 - trzy trening w tygodniu i praca siedząca</item>
+        <item>1.6 - cztery treningi w tygodniu i praca siedząca</item>
+        <item>1.7 - trzy trening w tygodniu i praca fizyczna</item>
+        <item>1.8 - cztery treningi w tygodniu i praca fizyczna</item>
+        <item>1.9 - codzienne treningi</item>
+        <item>2.0 - praca zawodowa sportowca</item>
+        <item>2.1 - intensywna praca zawodowa sportowca</item>
+        <item>2.2 - wyczerpująca praca zawodowa sportowca</item>
+    </string-array>
+</resources>

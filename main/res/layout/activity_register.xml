@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:theme="@android:style/Theme.Holo">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:src="@mipmap/logo" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_rounded"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <EditText
+                android:id="@+id/et_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorInputText"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="PODAJ ADRES MAILOWY"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorInputText"
+                android:textCursorDrawable="@color/colorInputText" />
+
+            <EditText
+                android:id="@+id/et_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorInputText"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="HASLO"
+                android:inputType="textPassword"
+                android:textColor="@color/colorInputText"
+                android:textCursorDrawable="@color/colorInputText" />
+
+            <EditText
+                android:id="@+id/et_register_password_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:backgroundTint="@color/colorInputText"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="POWTORZ HASLO"
+                android:inputType="textPassword"
+                android:textColor="@color/colorInputText"
+                android:textCursorDrawable="@color/colorInputText" />
+
+
+            <TextView
+                android:id="@+id/textView_register_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:fontFamily="sans-serif-black"
+                android:paddingTop="5dp"
+                android:text="Masz konto? Zaloguj!" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_register_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Rejestruj"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_register_clear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Wyczyść"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorButtonText"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/user_profile_image_background"
+        android:elevation="4dp"
+        android:src="@drawable/ic_mode_edit_black_24dp" />
+
+</RelativeLayout>
